@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+	function pulaLinha(){
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var data1 = 1500;
+	var data2 = 2019;
+	var diferencaDatas = data2 - data1;
+	var mediaGeracao = diferencaDatas/28;
+
+	mostra("O total de gerações entre " + data1 + " e " + data2 + " foi de " + Math.round(mediaGeracao));
+</script>

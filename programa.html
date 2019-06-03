@@ -2,14 +2,32 @@
 
 <script>
 	
+	var puloLinha = "<br><br><br>";
+
 	var ano = 2020;
 
-	document.write("A idade do Flávio é ");
-	document.write(2019 - 1987);
-	document.write("<br>A soma das idade é " + ((20+30+10)/3));
-	document.write("<br>");
 
-	    document.write("Flávio nasceu em " + (ano - 39) + "<br>");
+	document.write("Flávio nasceu em " + (ano - 39) + "<br>");
+	document.write(puloLinha);
     document.write("Joaquim nasceu em " + (ano - 20) + "<br>");
-    document.write("Barney nasceu em " + (ano - 40));
+    document.write(puloLinha);
+
+    ano = 2017;
+    document.write("Barney nasceu em " + (ano - 40) + "<br>");
+    document.write(puloLinha);
+
+    var idadeFlavio = 39;
+    var idadeJoaquim = 20;
+    var idadeBarney = 41;
+
+    var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3
+
+    var nome = 'Flavio';
+
+    document.write('A idade de ' + nome + ' é ' + idadeFlavio  + '<br>');
+
+    document.write('A média das idades é ' + Math.round(media));
+
+
+
 </script>
