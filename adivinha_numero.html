@@ -3,7 +3,7 @@
 
     function pulaLinha() {
 
-        document.write("<br>");
+        document.write("<br><br>");
     }
 
     function mostra(frase) {
@@ -18,14 +18,23 @@
     }    
 
     var numeroPensado = sorteia(10);
+    var tentativas = 1;
 
-    var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+    while(tentativas <= 3){
+        var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
 
-    if(chute == numeroPensado) {
+        if(chute == numeroPensado) {
 
-        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
-    } else {
+            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+            break;
+        } else {
 
-        mostra("Você errou! Eu tinha pensado no " + numeroPensado);
+            mostra("Você errou! ");
+        }    
+
+        tentativas ++;
     }
+
+    mostra("FIM");
+    
 </script>
